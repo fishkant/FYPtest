@@ -6,6 +6,8 @@ import { FinishedScreen } from './pages/FinishedScreen';
 import { Gender} from './pages/Gender';
 import { Age } from './pages/Age';
 
+export const apiHost = "https://us-central1-fyp-project-4e2b7.cloudfunctions.net/app"
+
 function App() {
   return (
     <BrowserRouter>

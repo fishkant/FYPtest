@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import { apiHost } from "../../App";
 
 
 
@@ -19,7 +20,7 @@ const initialState = {
 export const getGenders = createAsyncThunk('genders/getGenders', async (difficulty)=>{
     try{
         //const resp = await fetch(`https://the-trivia-api.com/v2/questions?limit=15&difficulties=${difficulty}`)
-        const resp = await fetch(`http://localhost:5000/genders`)
+        const resp = await fetch(`${apiHost}/genders`)
         //console.log(resp)
 
 

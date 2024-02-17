@@ -44,7 +44,7 @@ const ageArr = JSON.parse(agesvalue);
                 selections:selectionArr,
                 
                };
-        const response = await fetch(`http://localhost:5000/api/candidate`, {
+        const response = await fetch(`${apiHost}/api/candidate`, {
        
         method: 'POST',
         headers: {
